@@ -1,0 +1,92 @@
+/* Get rid of all padding/border/margin. Make sure
+   any of that comes directly from the dev. */
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+/* can use vw, vh: v(w|h) = % of viewing window dimension
+
+   This is *Chris Trager voice* this is litrelly the best thing ever
+
+*/
+
+
+/* Can chain together multiple selectors on one definition:
+   E.g. #box1, #box2, #box3 { ... } */
+
+.menuItems {
+    height: 7vh;
+    float: right;
+    width: 12vw;
+    background-color: black;
+    margin-left: 2vw;
+    list-style-type: none;
+}
+
+#galleryRow {
+    width: 88vw;
+    background-color: white;
+    float: left;
+    margin-left: 6vw;
+    margin-bottom: 6vh;
+    margin-right: 6vw;
+}
+
+.galleryItem {
+    width: 28.0vw;
+    height: 20vh;
+    margin-right: 2vw;
+    margin-bottom: 2vw;
+    float: left;
+    background-color: black;
+    list-style-type: none;
+}
+
+.galleryItem:last-child {
+    width: 28.0vw;
+    height: 20vh;
+    float: left;
+    margin-right: 0px;
+    background-color: black;
+    list-style-type: none;
+}
+
+#logo {
+
+    float: left;
+    height: 7vh;
+    width: 30vw;
+    background-color: black;
+    margin-left: 6vw;
+    margin-top: 2vh;
+    margin-bottom: 6vh;
+}
+
+#menu {
+    float: right;
+    background-color: white;
+    margin-right: 6vw;
+    margin-top: 2vh;
+    margin-bottom: 6vh;
+    height: 7vh;
+    width: 42vw;
+}
+
+.longHeadline {
+    margin-left: 6vw;
+    font-size: 3em;
+    width: 66.0vw;
+    text-align: left;
+    margin-bottom: 6vh;
+    float: left;
+}
+
+.subHeadline {
+    margin-left: 6vw;
+    font-size: 2em;
+    width: 66.0vw;
+    text-align: left;
+    float: left;
+    margin-bottom: 6vh;
+}

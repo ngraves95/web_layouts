@@ -1,0 +1,118 @@
+/* Get rid of all padding/border/margin. Make sure
+   any of that comes directly from the dev. */
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+/* can use vw, vh: v(w|h) = % of viewing window dimension
+
+   This is *Chris Trager voice* this is litrelly the best thing ever
+
+*/
+
+
+/* Can chain together multiple selectors on one definition:
+   E.g. #box1, #box2, #box3 { ... } */
+
+#content {
+    padding-top: 15vh;
+    margin-left: 20vw;
+    width: 72vw;
+
+}
+
+#sidebar {
+    position: fixed;
+    background-color: black;
+    width: 20vw;
+    height: 100vh;
+}
+
+
+#sidebarLogo {
+    margin-top: 2vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-bottom: 6vh;
+    width: 16vw;
+    height: 22vh;
+    background-color: white;
+}
+
+.sidebarItem {
+
+    margin-left: 2vw;
+    margin-bottom: 3vh;
+    width: 16vw;
+    height: 3vh;
+    background-color: white;
+
+}
+
+#bottomRow {
+    width: 72vw;
+    background-color: white;
+    float: left;
+    margin-left: 4vw;
+    margin-bottom: 6vh;
+    margin-right: 4vw;
+}
+
+.bottomItem {
+    width: 20.0vw;
+    height: 20vh;
+    margin-right: 6vw;
+    float: left;
+    background-color: black;
+    list-style-type: none;
+}
+
+.bottomItem:last-child {
+    width: 20.0vw;
+    height: 20vh;
+    float: left;
+    margin-right: 0px;
+    background-color: black;
+    list-style-type: none;
+}
+
+#logo {
+
+    float: left;
+    height: 7vh;
+    width: 25vw;
+    background-color: black;
+    margin-left: 4vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+#main {
+    height: 51vh;
+    width: 72vw;
+    background-color: black;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-bottom: 4vh;
+    clear: both; /* Gets rid of float and lets the elements reside under one another */
+}
+
+#topFooter {
+    margin-left: 4vw;
+    margin-bottom: 3vh;
+    height: 3vh;
+    width: 72vw;
+    background-color: black;
+    clear: both;
+}
+
+#bottomFooter {
+    float: left;
+    margin-left: 4vw;
+    margin-bottom: 3vh;
+    height: 3vh;
+    width: 20.0vw;
+    background-color: black;
+
+}

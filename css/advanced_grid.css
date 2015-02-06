@@ -1,0 +1,102 @@
+/* Get rid of all padding/border/margin. Make sure
+   any of that comes directly from the dev. */
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+/* can use vw, vh: v(w|h) = % of viewing window dimension
+
+   This is *Chris Trager voice* this is litrelly the best thing ever
+
+*/
+
+
+/* Can chain together multiple selectors on one definition:
+   E.g. #box1, #box2, #box3 { ... } */
+
+.menuItems {
+    height: 4vh;
+    float: right;
+    width: 8vw;
+    background-color: black;
+    margin-left: 2vw;
+    list-style-type: none;
+}
+
+.subtitle {
+    float: left;
+    width:  20.5vw;
+    height: 4vh;
+    background-color: black;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    margin-bottom: 2vh;
+}
+
+.bottomRow {
+    width: 88vw;
+    background-color: white;
+    float: left;
+    margin-left: 6vw;
+    margin-bottom: 6vh;
+    margin-right: 6vw;
+}
+
+.bottomItem {
+    width: 20.5vw;
+    height: 30vh;
+    margin-right: 2vw;
+    float: left;
+    background-color: black;
+    list-style-type: none;
+}
+
+.bottomItem:first-child {
+    width: 43.0vw;
+    height: 30vh;
+    float: left;
+    margin-right: 2vw;
+    background-color: black;
+    list-style-type: none;
+}
+
+.bottomItem:last-child {
+    width: 20.5vw;
+    height: 30vh;
+    float: left;
+    margin-right: 0px;
+    background-color: black;
+    list-style-type: none;
+}
+
+#logo {
+
+    float: left;
+    height: 10vh;
+    width: 12vw;
+    background-color: black;
+    margin-left: 6vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+#menu {
+    float: right;
+    background-color: white;
+    margin-right: 6vw;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+    height: 4vh;
+    width: 42vw;
+}
+
+#main {
+    height: 51vh;
+    width: 88vw;
+    background-color: black;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    margin-bottom: 6vh;
+    clear: both; /* Gets rid of float and lets the elements reside under one another */
+}

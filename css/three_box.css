@@ -1,0 +1,74 @@
+/* Get rid of all padding/border/margin. Make sure
+
+   any of that comes directly from the dev. */
+
+
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+/* can use vw, vh: v(w|h) = % of viewing window dimension
+
+   This is *Chris Trager voice* this is litrelly the best thing ever
+*/
+
+/* Can chain together multiple selectors on one definition:
+   E.g. #box1, #box2, #box3 { ... } */
+
+.menuItems {
+    float: right;
+    width: 8vw;
+    background-color: black;
+    margin-left: 2vw;
+    list-style-type: none;
+}
+
+#left {
+    height: 28.35vh;
+    width: 45.5vw;
+    margin-left: 3vw;
+    float: left;
+    background-color: black;
+
+}
+
+#right {
+    height: 28.35vh;
+    width: 45.5vw;
+    margin-right: 3vw;
+    float: right;
+    background-color: black;
+
+}
+
+#logo {
+
+    float: left;
+    height: 3vh;
+    width: 30vw;
+    background-color: black;
+    margin-left: 3vw;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+#menu {
+    float: right;
+    background-color: white;
+    margin-right: 3vw;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    height: 3vh;
+    width: 30vw;
+}
+
+#main {
+    height: 56.7vh;
+    width: 94;
+    background-color: black;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-bottom: 3vh;
+    clear: both; /* Gets rid of float and lets the elements reside under one another */
+}
